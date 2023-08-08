@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="tittle" connect="weather">
+    <title>Weather</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icloud.svg">
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/img-weather/logo.png" alt="logo">
+            </a>
+            <div class="search-view" data-search-view>
+                <div class="search-wrapper">
+                    <input type="search" name="search" placeholder="Search City" autocomplete="off" class="search-field"
+                        data-search-field>
+                    <span class="m-icon leading-icon">search</span>
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon">arrow_back</span>
+                    </button>
+                </div>
+                <div class="search-result" data-search-result></div>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                    <span class="m-icon icon">search</span>
+                </button>
+                <a href="#/weather?lat=49.2497&lon=-123.1193" class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon">my_location</span>
+                    <span class="span">Current Location</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <article class="container" data-container>
+            <div class="content-left">
+
+                <!-- current weather -->
+                <section class="sectiont current-weather" aria-label="current weather" data-current-weather>
+                </section>
+
+                <!-- 5 day's forecast -->
+                <section class="section forecast" aria-labelledby="forecast-label" data-5-day-forecast>
+                </section>
+            </div>
+            <div class="content-right">
+
+                <!--highlights-->
+                <section class="section highlights" aria-labelledby="highlights-label" data-highlights>
+
+                </section>
+
+                <!-- hourly forecast -->
+                <section class="section hourly-forecast" aria-label="hourly forecast" data-hourly-forecast>
+                </section>
+
+                <!-- footer -->
+                <footer class="footer">
+                    <p class="body-3">&#169; Gagik Yeranosyan. All Rights Reserved.</p>
+                    <p class="body-3">Powered by<a href="https://openweathermap.org/api" title="Free Open Weather Api"
+                            target="_blank" rel="noopener">
+                            <img src="assets/img-weather/openweather.png" width="150" loading="lazy" height="30"
+                                alt="OpenWeather"></a></p>
+                </footer>
+            </div>
+
+            <!-- loading -->
+            <div class="loading" data-loading></div>
+        </article>
+    </main>
+
+    <!-- error -->
+    <section class="error-content" data-error-content>
+        <h2 class="heading">404</h2>
+        <p class="body-1">Page not found!</p>
+        <a href="#/weather?lat=49.2497&lon=-123.1193" class="btn-primary">
+            <span class="span">Go Home</span>
+        </a>
+    </section>
+    <script src="/js/app.js" type="module"></script>
+    <script src="/js/route.js" type="module"></script>
+</body>
+
+</html>
