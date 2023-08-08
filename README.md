@@ -5,8 +5,6 @@ The practice of working with the API, used:
 # Tech Stack
 HTML, CSS, JS, API ;
 
-# Demo
-- https://yeranosyan.github.io/Weather-App-Frontend/
 # Run Locally
 Open with VSCode ;
 Open with live server :
