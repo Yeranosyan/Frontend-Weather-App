@@ -1,9 +1,9 @@
 # Weather-App-Frontend 2022
 The practice of working with the API, used:
--https://www.postman.com/
--https://openweathermap.org/
+- https://www.postman.com/
+- https://openweathermap.org/
 # Tech Stack
-HTML, CSS, JavaScript, API ;
+HTML, CSS, JS, API ;
 
 # Run Locally
 Open with VSCode ;
