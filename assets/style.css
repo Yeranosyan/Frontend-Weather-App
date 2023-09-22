@@ -1,10 +1,8 @@
 :root {
   /* colors */
-  /* --primary: #E2F89C; */
-  --on-primary: #100e17;
-  --background: #131214e7;
+  --background: #2a2929;
   --on-background: #eae6f2;
-  --surface: #1d1c1f;
+  --surface: #222124be;
   --on-surface: #dddae5;
   --on-surface-variant: #7b7980;
   --on-surface-variant-2: #b9b6bf;
@@ -161,15 +159,6 @@ body {
   border-radius: var(--radius-pill);
 }
 
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2");
-}
-
 .m-icon {
   font-family: "Material Icons";
   font-weight: normal;
@@ -185,7 +174,6 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "liga";
   height: 1em;
   width: 1em;
 }
@@ -528,7 +516,7 @@ article.container::before {
   margin-block-end: 16px;
 }
 
-.current-weather-card .weapper {
+.current-weather-card .wrapper {
   margin-block: 12px;
   display: flex;
   gap: 8px;

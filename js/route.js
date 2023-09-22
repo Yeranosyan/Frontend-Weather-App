@@ -18,7 +18,6 @@ const currentLocation = function () {
  * @param {string} query Searched query
  */
 const searchedLocation = (query) => updateWeather(...query.split("&"));
-//updateWeather("lat=49.2497", "lon=-123.1193")
 
 const routes = new Map([
   ["/current-location", currentLocation],

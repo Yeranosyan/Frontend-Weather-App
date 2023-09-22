@@ -137,7 +137,7 @@ export const updateWeather = function (lat, lon) {
 
     card.innerHTML = `
            <h2 class="title-2 card-title">Now</h2>
-            <div class="weapper">
+            <div class="wrapper">
                <p class="heading">${parseInt(temp)}&deg;<sup>c</sup></p>
                <img src="assets/img-weather/${icon}.png" width="64" height="64" alt="${description}"
                class="weather-icon">
@@ -236,9 +236,9 @@ export const updateWeather = function (lat, lon) {
              <div class="card card-sm highlight-card">
                 <h3 class="title-3">Humidity</h3>
                 <div class="wrapper">
-                    <span class="material-symbols-outlined">
-                        humidity_percentage
-                    </span>
+                <span class="material-symbols-outlined">
+                humidity_percentage
+                </span>
                     <p class="title-1">${humidity}<sub>%</sub></p>
                 </div>
              </div>
@@ -277,13 +277,17 @@ export const updateWeather = function (lat, lon) {
         list: forecastList,
         city: { timezone },
       } = forecast;
+      const card = document.createElement("div");
+      card.classList.add("card", "card-lg");
 
       hourlySection.innerHTML = `
+          <div class="card card-lg hourlySection">
              <h2 class="title-2">Today at</h2>
              <div class="slider-container">
                 <ul class="slider-list" data-temp></ul>
                 <ul class="slider-list" data-wind></ul>
              </div>
+          </div>
              `;
 
       for (const [index, data] of forecastList.entries()) {
