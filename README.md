@@ -1,4 +1,4 @@
-# Weather-App-Frontend 2022
+# Weather-App-Frontend
 The practice of working with the API, used:
 - https://www.postman.com/
 - https://openweathermap.org
