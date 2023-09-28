@@ -1,10 +1,9 @@
 # Weather-App-Frontend
-The practice of working with the API, used:
-- https://www.postman.com/
-- https://openweathermap.org
+The idea was to create a Weather App that uses current weather data. I started by searching for an API source. The most popular one I found is OpenWeatherMap, an online service that provides weather forecasts, nowcasts, and historical data in a fast and elegant manner. It took me a little time to figure out how to create an account and explore the current plans. I chose the Free Plan with 1,000,000 calls per month since I was just learning how to create an API. With this plan, I could access Current Weather, a 3-hour Forecast for 5 days, Air Pollution information, and Geocoding capabilities (Geocoding API is a service that takes a place as an address, latitude and longitude coordinates, or a place ID).
 
-# Tech Stack
-HTML, CSS, JS, API 
+My next step was to find a platform for building the API. I chose Postman to build and utilize my API. I implemented 5 GET requests, set query parameters, and obtained my ready APIs. To retrieve this data, I used the JavaScript fetch() method and then called the response.json() method to parse the JSON data into a JavaScript object.
+
+For styling, I utilized CSS and Material Symbols icons.
 
 # Run Locally
 - Open with VSCode
